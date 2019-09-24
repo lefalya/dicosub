@@ -22,6 +22,11 @@ class MainActivity : AppCompatActivity() {
 
         list.addAll(PlanesData.listData)
         showRecyclerCardView()
+
+        getSupportActionBar()?.setDisplayShowHomeEnabled(true);
+        getSupportActionBar()?.setLogo(R.drawable.airbus_logo);
+        getSupportActionBar()?.setDisplayUseLogoEnabled(true);
+        getSupportActionBar()?.setDisplayShowTitleEnabled(false);
     }
 
     private fun showRecyclerCardView() {

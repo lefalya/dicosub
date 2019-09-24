@@ -14,6 +14,30 @@ object PlanesData {
         "A330-900"
     )
 
+    private val photo = intArrayOf(
+        R.drawable.a220_100,
+        R.drawable.a220_300,
+        R.drawable.a318,
+        R.drawable.a319neo,
+        R.drawable.a320neo,
+        R.drawable.a321neo,
+        R.drawable.a330_200,
+        R.drawable.a330_300,
+        R.drawable.a330_800neo,
+        R.drawable.a330_900neo)
+
+    private val photoBg = intArrayOf(
+        R.drawable.a220_100bg,
+        R.drawable.a220_300bg,
+        R.drawable.a318bg,
+        R.drawable.a319neobg,
+        R.drawable.a320neobg,
+        R.drawable.a321neobg,
+        R.drawable.a330_200bg,
+        R.drawable.a330_300bg,
+        R.drawable.a330_800neobg,
+        R.drawable.a330_900neobg)
+
     private val shortDescription = arrayOf(
         "Purpose built for eficiency",
         "A flexible and comfortable cabin",
@@ -26,18 +50,6 @@ object PlanesData {
         "The entry-level wide-body",
         "Highly efficient operations"
     )
-
-    private val photo = intArrayOf(
-        R.drawable.a220_100,
-        R.drawable.a220_300,
-        R.drawable.a318,
-        R.drawable.a319neo,
-        R.drawable.a320neo,
-        R.drawable.a321neo,
-        R.drawable.a330_200,
-        R.drawable.a330_300,
-        R.drawable.a330_800neo,
-        R.drawable.a330_900neo)
 
     private val range = arrayOf(
         6297,
@@ -151,6 +163,7 @@ object PlanesData {
             plane.name = name[position]
             plane.shortDescription = shortDescription[position]
             plane.photo = photo[position]
+            plane.backgroundPhoto = photoBg[position]
             plane.range = range[position]
             plane.seating = seating[position]
             plane.length = length[position]
