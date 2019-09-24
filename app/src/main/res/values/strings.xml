@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="heroes_name">A330</string>
+    <string name="detail">Built for eficiency</string>
+</resources>
