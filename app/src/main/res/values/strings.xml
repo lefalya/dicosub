@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Airbus Catalogue</string>
     <string name="heroes_name">A330</string>
     <string name="detail">Built for eficiency</string>
 </resources>

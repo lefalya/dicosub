@@ -50,6 +50,12 @@ class PlaneDetail : AppCompatActivity() {
         getSupportActionBar()?.setLogo(R.drawable.airbus_logo);
         getSupportActionBar()?.setDisplayUseLogoEnabled(true);
         getSupportActionBar()?.setDisplayShowTitleEnabled(false);
+        getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 
 

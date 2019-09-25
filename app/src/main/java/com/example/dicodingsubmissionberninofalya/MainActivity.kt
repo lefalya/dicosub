@@ -8,6 +8,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.io.Serializable
 
+import android.view.Menu
+
+import android.view.MenuItem
+
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var rvPlanes : RecyclerView
@@ -27,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         getSupportActionBar()?.setLogo(R.drawable.airbus_logo);
         getSupportActionBar()?.setDisplayUseLogoEnabled(true);
         getSupportActionBar()?.setDisplayShowTitleEnabled(false);
+
     }
 
     private fun showRecyclerCardView() {
@@ -39,6 +45,23 @@ class MainActivity : AppCompatActivity() {
                 showDetails(data)
             }
         })
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    // handle button activities
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id = item.getItemId()
+
+        if (id == R.id.about) {
+            // do something here
+            val goToAbout = Intent(this@MainActivity, About::class.java)
+            startActivity(goToAbout)
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun showDetails(plane : Plane){

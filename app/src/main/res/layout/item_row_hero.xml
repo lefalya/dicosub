@@ -18,7 +18,7 @@
         android:padding="8dp">
 
         <ImageView
-            android:id="@+id/img_item_photo"
+            android:id="@+id/guegue"
             android:layout_width="96dp"
             android:layout_height="60dp"
             android:layout_alignParentStart="true"
@@ -45,8 +45,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginRight="7dp"
             android:layout_marginBottom="8dp"
-            android:layout_toEndOf="@+id/img_item_photo"
-            android:layout_toRightOf="@+id/img_item_photo"
+            android:layout_toEndOf="@+id/guegue"
+            android:layout_toRightOf="@+id/guegue"
             android:textSize="25sp"
             android:textStyle="bold"
             tools:text="@string/heroes_name" />
@@ -64,8 +64,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="7dp"
             android:layout_marginBottom="15dp"
-            android:layout_toEndOf="@+id/img_item_photo"
-            android:layout_toRightOf="@+id/img_item_photo"
+            android:layout_toEndOf="@+id/guegue"
+            android:layout_toRightOf="@+id/guegue"
             android:ellipsize="end"
             android:maxLines="5"
             android:textSize="12sp"
